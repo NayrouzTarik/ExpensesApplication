@@ -64,7 +64,7 @@ flask run
 cd ../client
 npm install
 npm run dev
-
+```
 ### Access
 - **Frontend Application**: [http://localhost:5173](http://localhost:5173)  
 - **Backend API**: [http://localhost:5000](http://localhost:5000) 
