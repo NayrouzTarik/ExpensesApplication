@@ -37,9 +37,9 @@ The backend is built with Flask and provides RESTful APIs for user authenticatio
 
 ## Installation
 
-### Clone the Repository
 
 ```bash
+### Clone the Repository
 git clone https://github.com/your-repo/ExpenseAI-Planner.git
 cd ExpenseAI-Planner
 
