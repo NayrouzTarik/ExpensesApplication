@@ -19,7 +19,6 @@ The frontend is built with React and Material-UI for a modern and responsive use
 - **Framework**: React with Vite for fast development.
 - **Styling**: Material-UI and custom themes.
 - **Routing**: React Router for navigation.
-- **Charts**: Recharts for data visualization.
 
 ### Server (Backend)
 
@@ -74,7 +73,6 @@ npm run dev
 ### Frontend
 - **React** - JavaScript library for building user interfaces
 - **Material-UI** - React components for faster UI development
-- **Recharts** - Charting library for data visualization
 - **Axios** - Promise-based HTTP client
 - **React Router** - Navigation and routing for React apps
 
