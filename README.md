@@ -44,7 +44,6 @@ git clone https://github.com/your-repo/ExpenseAI-Planner.git
 cd ExpenseAI-Planner
 
 ### Backend Setup
-```bash
 cd server
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
@@ -53,18 +52,15 @@ pip install -r requirements.txt
 ### Create .env:
 Create `.env` file in the `server` directory with:
 
-```env
 FLASK_APP=app.py
 FLASK_ENV=development
-AI_API_KEY=your-ai-api-key  # Replace with actual API key
+AI_API_KEY=your-ai-api-key  # Replace with actual API key from AI together
 
 ### Run backend:
-```bash
 python app.py
 flask run
 
 ### Frontend Setup
-```bash
 cd ../client
 npm install
 npm run dev
