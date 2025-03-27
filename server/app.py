@@ -28,7 +28,6 @@ def get_db():
 def init_db():
     with app.app_context():
         db = get_db()
-        # Users table
         db.execute("""
         CREATE TABLE IF NOT EXISTS users (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -37,7 +36,6 @@ def init_db():
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
         """)
-        # Financial data table
         db.execute("""
         CREATE TABLE IF NOT EXISTS financial_data (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,7 +52,6 @@ def init_db():
             FOREIGN KEY (user_id) REFERENCES users (id)
         )
         """)
-        # User settings table
         db.execute("""
         CREATE TABLE IF NOT EXISTS user_settings (
             user_id INTEGER PRIMARY KEY,
@@ -68,7 +65,6 @@ def init_db():
 
 init_db()
 
-# Helper functions
 def create_token(user_id):
     payload = {
         'user_id': user_id,
@@ -83,7 +79,6 @@ def verify_token(token):
     except:
         return None
 
-# Routes
 @app.route('/api/register', methods=['POST'])
 def register():
     data = request.json
@@ -302,7 +297,6 @@ def generate_plan():
         - Practical daily implementation
         """
     
-    # Call AI API
     headers = {
         "Authorization": f"Bearer {AI_API_KEY}",
         "Content-Type": "application/json"
